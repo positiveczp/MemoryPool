@@ -19,3 +19,9 @@ A memory pool has just a few disadvantages:
 ## When to Use
 
 You should use a memory pool when you need to allocate many objects of the same size. This is usually the case when you implement common data structures like linked lists, binary search trees, hash tables with chaining and so on. Using a memory pool in these cases will increase performance by several folds and reduce wasted memory substantially.
+
+## Picking BlockSize
+
+BlockSize is the size of the chunks in bytes the allocator will ask from the system. It has to be large enough to contain at least two pointers or two T objects, depending on which is bigger.
+
+
