@@ -26,3 +26,6 @@ Picking the correct BlockSize is essential for good performance. I suggest you p
 ## About the Code
 
 Here are a few important points that you should know about the code:
+
+* This code handles alignment for the objects automatically, which is necessary for high performance memory access and may even be required on certain processors. However, it assumes the memory returned by operator new is "aligned enough" to store a pointer. This assumption was not necessary, but since it is reasonable enough, I decided to remove two lines of code. I am not sure if this is required by the standard, but all C code using malloc would crash (or run extremely slowly) if this was not the case.
+
