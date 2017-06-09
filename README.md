@@ -12,3 +12,6 @@ You would normally use malloc or new for dynamic memory management in C/C++. The
 * You do not need to free object one by one. The allocator will free all the memory it allocated once its destructor is called. Note that this only works if the objects have a default destructor.
 
 A memory pool has just a few disadvantages:
+
+* Objects have a fixed size which must be known beforehand. This is usually not a problem and mostly the case if you need to allocate them in a bunch
+* You may need to fine tune them for your specific application. This is made very easy with the use of template classes.
