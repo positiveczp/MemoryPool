@@ -23,4 +23,6 @@ You should use a memory pool when you need to allocate many objects of the same 
 ## Picking BlockSize
 Picking the correct BlockSize is essential for good performance. I suggest you pick a power of two, which may decrease memory fragmentation depending on your system. Also, make sure that BlockSize is at least several hundred times larger than the size of T for maximum performance. The idea is, the greater the BlockSize, the less calls to malloc the library will make. However, picking a size too big might increase memory usage unnecessarily and actually decrease the performance because malloc may need to make many system calls.
 
+## About the Code
 
+Here are a few important points that you should know about the code:
