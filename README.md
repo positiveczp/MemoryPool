@@ -10,3 +10,5 @@ You would normally use malloc or new for dynamic memory management in C/C++. The
 * There is almost no memory overhead since the size of each object is known beforehand (i.e. no need to store allocation metadata)
 * There is little to no memory fragmentation
 * You do not need to free object one by one. The allocator will free all the memory it allocated once its destructor is called. Note that this only works if the objects have a default destructor.
+
+A memory pool has just a few disadvantages:
