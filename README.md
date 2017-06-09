@@ -15,3 +15,5 @@ A memory pool has just a few disadvantages:
 
 * Objects have a fixed size which must be known beforehand. This is usually not a problem and mostly the case if you need to allocate them in a bunch
 * You may need to fine tune them for your specific application. This is made very easy with the use of template classes.
+
+# When to Use
