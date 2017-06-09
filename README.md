@@ -31,13 +31,15 @@ Here are a few important points that you should know about the code:
 
 * The allocator does not free any memory until it is destructed (though it does re-use the memory that you deallocate). This is fine if you only allocate objects, or if you deallocate and re-allocate objects equally often. This is only a problem if you have peaks of high memory usage and you expect the memory to be freed during low memory periods. This was a design choice to substantially improve the performance, and under most cases you do not need to worry about this. It is good to keep this mind for projects that require special handling of the memory though.
 
-## Reference
+## References
 * http://blog.csdn.net/pi9nc/article/details/11214473
 * http://blog.csdn.net/jcjc918/article/details/44997089
 * http://www.cnblogs.com/wpcockroach/archive/2012/05/10/2493564.html
 * http://blog.csdn.net/justaipanda/article/details/7790355
 *  http://www.cplusplus.com/reference/memory/allocator/
 *  http://www.cplusplus.com/reference/memory/allocator_traits/
+* http://blog.csdn.net/zhangxinrun/article/details/5940019
+* http://www.cnblogs.com/BeyondTechnology/archive/2010/09/19/1831293.html
 
 
 
